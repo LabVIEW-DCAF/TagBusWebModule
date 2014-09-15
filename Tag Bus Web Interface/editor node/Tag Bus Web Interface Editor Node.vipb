@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-23 18:54:27" Modified_Date="2014-08-15 15:34:01" Creator="Daniel" Comments="" ID="f625c4b775267fb6e2f6f66029ad17f0">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-23 18:54:27" Modified_Date="2014-09-13 02:00:47" Creator="Daniel" Comments="" ID="6dbd15ed4faf55412c0f443ff21b2a1d">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_tbwi_editnode</Package_File_Name>
-    <Library_Version>1.0.0.7</Library_Version>
+    <Library_Version>1.0.0.8</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\..\releases\modules\tag bus web</Library_Output_Folder>
