@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-23 18:54:27" Modified_Date="2014-09-17 13:22:24" Creator="Daniel" Comments="" ID="333e92d7da96060c0410ad1012e28cf6">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-23 18:54:27" Modified_Date="2014-09-24 14:36:54" Creator="Daniel" Comments="" ID="4eccf701eee4bb3103f7cfb1d53fd7fc">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_tbwi_editnode</Package_File_Name>
-    <Library_Version>1.0.1.10</Library_Version>
+    <Library_Version>1.1.0.11</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\..\releases\modules\tag bus web</Library_Output_Folder>
@@ -35,7 +35,7 @@
       <Copyright/>
       <Packager>NI Systems Engineering</Packager>
       <URL/>
-      <Release_Notes/>
+      <Release_Notes>changed to dvr lock/unlock, minor code cleanup</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
