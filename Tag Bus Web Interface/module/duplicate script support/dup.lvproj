@@ -100,7 +100,6 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="XMLGen.lvlib" Type="Library" URL="/&lt;vilib&gt;/AppBuilder/Engine/WebServiceDescription/XMLGen/XMLGen.lvlib"/>
 			</Item>
-			<Item Name="AddCVTWebServiceToProject.vi" Type="VI" URL="../../../../../project/AddCVTWebServiceToProject.vi"/>
 			<Item Name="Error Codes.ctl" Type="VI" URL="/&lt;resource&gt;/dialog/PreferencesDialog/PreferencePages/WebServer_SubVIs/Error Codes.ctl"/>
 			<Item Name="Get Result Code.vi" Type="VI" URL="/&lt;resource&gt;/dialog/PreferencesDialog/PreferencePages/WebServer_SubVIs/Get Result Code.vi"/>
 			<Item Name="GetDefaultPort.vi" Type="VI" URL="/&lt;resource&gt;/dialog/PreferencesDialog/PreferencePages/WebServer_SubVIs/GetDefaultPort.vi"/>
