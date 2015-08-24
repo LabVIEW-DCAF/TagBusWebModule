@@ -22,15 +22,15 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="tagweb" Type="Web Service">
 			<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
-			<Property Name="ws.disconnectInline" Type="Bool">true</Property>
+			<Property Name="ws.disconnectInline" Type="Bool">false</Property>
 			<Property Name="ws.disconnectTypeDefs" Type="Bool">false</Property>
 			<Property Name="ws.guid" Type="Str">{13C94E78-D791-4090-8A40-C913F38E1ED1}</Property>
-			<Property Name="ws.modifyLibraryFile" Type="Bool">true</Property>
+			<Property Name="ws.modifyLibraryFile" Type="Bool">false</Property>
 			<Property Name="ws.private_folder_name" Type="Str">C:\perforce\Sales\projects\Components\TagWeb Client\trunk\sample web service\private</Property>
-			<Property Name="ws.public_folder_name" Type="Str">Public Content</Property>
+			<Property Name="ws.public_folder_name" Type="Str">C:\Program Files (x86)\National Instruments\LabVIEW 2013\vi.lib\NI\TagWebClient\Public Content</Property>
 			<Property Name="ws.remoteDebugging" Type="Bool">false</Property>
-			<Property Name="ws.removeLibraryItems" Type="Bool">true</Property>
-			<Property Name="ws.removePolyVIs" Type="Bool">true</Property>
+			<Property Name="ws.removeLibraryItems" Type="Bool">false</Property>
+			<Property Name="ws.removePolyVIs" Type="Bool">false</Property>
 			<Property Name="ws.serveDefaultDoc" Type="Bool">true</Property>
 			<Property Name="ws.SSE2" Type="Bool">true</Property>
 			<Property Name="ws.static_permissions" Type="Str"></Property>
@@ -41,7 +41,11 @@
 			<Item Name="Public Content" Type="Folder" URL="/&lt;vilib&gt;/NI/TagWebClient/Public Content">
 				<Property Name="NI.DISK" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Startup VIs" Type="Startup VIs Container"/>
+			<Item Name="Startup VIs" Type="Startup VIs Container">
+				<Item Name="startup include.vi" Type="VI" URL="../web service/startup include.vi">
+					<Property Name="ws.type" Type="Int">2</Property>
+				</Item>
+			</Item>
 			<Item Name="Web Resources" Type="HTTP WebResources Container">
 				<Item Name="groups" Type="HTTP WebResources Container">
 					<Item Name="WriteGroup.vi" Type="VI" URL="../web service/WriteGroup.vi">
@@ -160,8 +164,12 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
+				<Item Name="ms timing source.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Module Timing Source/standard timing source/ms timing source.lvclass"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_WebServices.lvlib" Type="Library" URL="/&lt;vilib&gt;/wsapi/NI_WebServices.lvlib"/>
+				<Item Name="NISE_CEF_serializable configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Configuration Framework/serializable configuration/NISE_CEF_serializable configuration.lvclass"/>
+				<Item Name="NISE_error generator.vi" Type="VI" URL="/&lt;vilib&gt;/NI/Configuration Framework/error generator/NISE_error generator.vi"/>
 				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
 				<Item Name="tag bus.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Tag Bus/tag bus.lvlib"/>
 				<Item Name="tagweb client API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/TagWebClient/API/tagweb client API.lvlib"/>
@@ -178,10 +186,9 @@
 			<Item Name="getReadTagBusRef.vi" Type="VI" URL="../web service/private/getReadTagBusRef.vi"/>
 			<Item Name="getWriteTagBusRef.vi" Type="VI" URL="../web service/private/getWriteTagBusRef.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="read tag bus value into string.vi" Type="VI" URL="../web service/private/read tag bus value into string.vi"/>
+			<Item Name="Tag Bus Web Interface configuration.lvclass" Type="LVClass" URL="../configuration/Tag Bus Web Interface configuration.lvclass"/>
+			<Item Name="Tag Bus Web Interface runtime.lvclass" Type="LVClass" URL="../execution/Tag Bus Web Interface runtime.lvclass"/>
 			<Item Name="validDataString.vi" Type="VI" URL="../web service/private/validDataString.vi"/>
 			<Item Name="ws_runtime.dll" Type="Document" URL="ws_runtime.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>

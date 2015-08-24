@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-14 18:05:46" Modified_Date="2015-01-14 14:42:41" Creator="Daniel" Comments="" ID="a1dfd82c0c4f63328fa465c7c164b8f3">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-14 18:05:46" Modified_Date="2015-08-24 12:59:02" Creator="Daniel" Comments="" ID="2354e2e7c5a3ad81b7681119d44dbaf0">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_tbm_web</Package_File_Name>
-    <Library_Version>2.0.1.3</Library_Version>
+    <Library_Version>2.0.2.3</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\releases\modules\TagBusWeb</Library_Output_Folder>
@@ -37,7 +37,7 @@
       <Copyright/>
       <Packager>NI Systems Engineering</Packager>
       <URL/>
-      <Release_Notes>Update to CEF2</Release_Notes>
+      <Release_Notes>Add include file to improve loading on RT</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -107,12 +107,6 @@
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
-      <Destination_Overrides>
-        <Path>tools menu/AddTagBusWebServiceToProject.vi</Path>
-        <Destination>7</Destination>
-        <Additional_Destination>false</Additional_Destination>
-        <Additional_Destination_Index>0</Additional_Destination_Index>
-      </Destination_Overrides>
       <Password_Overrides>
         <Path>.</Path>
         <Password/>
@@ -128,9 +122,6 @@
       </Exclusions>
       <Exclusions>
         <Path>Tag Bus Web Interface.lvproj</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>duplicate script support/dup.lvproj</Path>
       </Exclusions>
       <Exclusions>
         <Path>sample_code_license_terms_20141101.txt</Path>
